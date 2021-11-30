@@ -1,0 +1,2952 @@
+// Method Dokshina
+*
+    box-sizing: border-box
+    outline: none
+
+a
+    text-decoration: none
+    color: inherit
+
+.hidden
+    visibility: hidden
+
+a, button
+    cursor: pointer
+
+input, button
+    border: none
+    padding: 0
+    background: none
+
+p, ul, h1, h2, h3, h4, h5, h6, ol
+    padding: 0
+    margin: 0
+    font-weight: normal
+
+ul, ol
+    list-style: none
+
+button, input
+    display: inline-block
+
+section
+    padding: 100px 0
+
+body
+    font-size: var(--fz-base)
+    color: var(--c-text-regular)
+    font-family: 'Montserrat', 'Arial', sans-serif
+    background-color: #fff
+    position: relative
+    font-weight: normal
+    color: #0A0B09
+
+.section--black
+    background-color: #11171F
+.meth
+    &-global-wrap
+        overflow: hidden
+    &__title
+        font-family: Gotham Pro Narrow
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 120%
+        text-transform: uppercase
+    &-relative
+        position: relative
+    &-button
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #fff
+        text-transform: uppercase
+        font-weight: bold
+        font-size: 14px
+        padding-top: 30px
+        padding-bottom: 30px
+        padding-left: 85px
+        padding-right: 85px
+        background: #0066FF
+        font-family: Gotham Pro Narrow
+        letter-spacing: 0.1em
+        box-shadow: 0px 10px 25px rgba(0, 102, 255, 0.3), inset 0px -15px 20px rgba(202, 223, 255, 0.15)
+        border-radius: 12px
+        transition: box-shadow 0.3s
+        &:hover
+            box-shadow: 0px 10px 50px rgba(0, 102, 255, 0.5), inset 0px -15px 20px rgba(202, 223, 255, 0.3)
+            transition: box-shadow 0.3s
+        &-white
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: #fff
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05)
+            border-radius: 12px
+            color: #0066FF
+            font-size: 14px
+            padding-top: 30px
+            padding-bottom: 30px
+            padding-left: 85px
+            padding-right: 85px
+            font-family: Gotham Pro Narrow
+            padding-left: 45px
+            padding-right: 45px
+            border: 2px solid #fff
+            transition: color 0.3s, background-color 0.3s
+            &:hover
+                color: #fff
+                background-color: transparent
+                filter: drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.05))
+                transition: color 0.3s, background-color 0.3s
+                box-shadow: unset
+    &-header
+        color: #fff
+        padding-top: 50px
+        padding-bottom: 0
+        font-family: Gotham Pro
+        &-wrap
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding-right: 300px
+            &-wrap
+                display: flex
+                align-items: center
+            &-link
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                &__text
+                    font-size: 10px
+                    opacity: 0.5
+                &__icon
+                    width: 49px
+                    height: 36px
+                    margin-bottom: 10px
+                    opacity: 0.5
+            &__intro
+                font-size: 14px
+                line-height: 130%
+                opacity: 0.5
+                margin-left: 96px
+            &-contact
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: flex-end
+                &-tel
+                    margin-bottom: 10px
+                    &__span
+                        font-size: 22px
+                &__link
+                    color: #0066FF
+                    font-size: 12px
+                    text-transform: uppercase
+                    font-weight: 700
+                    padding-bottom: 4px
+                    border-bottom: 1px solid #0066FF
+                    transition: border-color 0.2s
+                    &:hover
+                        border-color: transparent
+                        transition: border-color 0.2s
+
+    &-first
+        padding-top: 180px
+        padding-bottom: 315px
+        color: #fff
+        font-family: Gotham Pro
+        background-image: url(../assets/meth/first/bg.png)
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: contain
+        &__title
+            font-size: 72px
+            line-height: 110%
+            text-transform: uppercase
+            margin-bottom: 30px
+            font-weight: bold
+            font-family: Gotham Pro Narrow
+        &__subtitle
+            margin-left: 20px
+            font-size: 22px
+            line-height: 140%
+            margin-bottom: 68px
+            position: relative
+            &::before
+                position: absolute
+                content: ''
+                display: inline-block
+                width: 4px
+                height: 124px
+                background-color: #0066ff
+                top: 0
+                left: -20px
+            &--blue
+                color: #0066ff
+                font-weight: bold
+        &__button
+            position: relative
+            font-family: Gotham Pro Narrow
+            letter-spacing: 2px
+            &-img
+                position: absolute
+                top: -25px
+                right: -24px
+                width: 75px
+                transform: rotate(-41deg)
+                pointer-events: none
+        &-founder
+            &__name
+            &__desc
+
+    &-grid
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
+        grid-gap: 30px
+        &-card
+            border: 3px solid rgba(255, 255, 255, 0.2)
+            border-radius: 12px
+    &-invest
+        color: #fff
+        padding-bottom: 0
+        position: relative
+        font-family: Gotham Pro
+        &::before
+            position: absolute
+            content: ''
+            display: inline-block
+            height: 1300px
+            width: 400px
+            background-image: url(../assets/meth/sparkles-red.png)
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+            top: -30px
+            left: 0
+        &::after
+            position: absolute
+            content: ''
+            display: inline-block
+            height: 1500px
+            width: 500px
+            background-image: url(../assets/meth/sparkles-blue.png)
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+            top: -100px
+            right: 0
+        &__title
+            font-family: Gotham Pro Narrow
+            font-weight: bold
+            line-height: 140%
+            font-size: 40px
+            text-transform: uppercase
+            margin-bottom: 25px
+            &--red
+                font-weight: bold
+                line-height: 140%
+                font-size: 40px
+                text-transform: uppercase
+                color: #f32a2a
+        &__subtitle
+            font-size: 22px
+            line-height: 140%
+            margin-bottom: 50px
+        &-grid
+            &-cards
+                display: grid
+                grid-template-rows: 1fr 1fr
+                position: relative
+                z-index: 5
+            &-card
+                padding-top: 40px
+                padding-bottom: 40px
+                padding-right: 30px
+                position: relative
+                &--first
+                    grid-column: 1/5
+                    grid-row: 1/2
+                    padding-left: 230px
+                &--second
+                    grid-column: 1/5
+                    grid-row: 2/3
+                    padding-left: 230px
+                &--third
+                    grid-column: 5/7
+                    grid-row: 1/3
+                    padding-left: 30px
+                &__img
+                    position: absolute
+                    top: 0
+                    left: 0
+                &:first-child img
+                    width: 223px
+                    top: 30px
+                    left: -3px
+                &:nth-child(2) img
+                    width: 270px
+                    top: -15px
+                    left: -3px
+                &:last-child img
+                    width: 101%
+                    top: -75px
+                    left: -2px
+
+                &-wrap
+                    display: flex
+                    flex-direction: column
+                    &__title
+                        font-family: Gotham Pro Narrow
+                        font-size: 24px
+                        font-weight: bold
+                        line-height: 120%
+                        text-transform: uppercase
+                        margin-bottom: 15px
+                    &__desc
+                        color: rgba(255, 255, 255, 0.6)
+                        font-size: 16px
+                        line-height: 150%
+
+    &-diff
+        font-family: Gotham Pro
+        color: #fff
+        &__title
+            font-family: Gotham Pro Narrow
+            font-size: 40px
+            line-height: 120%
+            font-weight: bold
+            text-transform: uppercase
+            margin-bottom: 50px
+        &-grid
+            &-cards
+                grid-template-rows: 1fr
+            &-card
+                padding-top: 40px
+                padding-bottom: 25px
+                padding-left: 40px
+                padding-right: 40px
+                &--first
+                    grid-column: 1/5
+                    border: 5px solid #04C700
+                    .meth-diff-grid-card__title
+                        color: #04c700
+                    .meth-diff-grid-card-list__item::before
+                        position: absolute
+                        content: ''
+                        display: inline-block
+                        width: 16px
+                        height: 16px
+                        background-image: url(../assets/meth/difference/check.svg)
+                        background-position: center center
+                        background-repeat: no-repeat
+                        background-size: contain
+                        top: 0px
+                        left: -25px
+
+                &--second
+                    grid-column: 5/7
+                    border: 5px solid #F32A2A
+                    .meth-diff-grid-card__title
+                        color: #f32a2a
+                    .meth-diff-grid-card-list__item::before
+                        position: absolute
+                        content: ''
+                        display: inline-block
+                        width: 16px
+                        height: 18px
+                        background-image: url(../assets/meth/difference/cross.svg)
+                        background-position: center center
+                        background-repeat: no-repeat
+                        background-size: contain
+                        top: 0px
+                        left: -25px
+                &__title
+                    font-family: Gotham Pro Narrow
+                    font-size: 24px
+                    font-weight: bold
+                    margin-bottom: 15px
+                    text-transform: uppercase
+                &-list
+                    &__item
+                        margin-left: 25px
+                        position: relative
+                        margin-bottom: 15px
+                        font-size: 16px
+                        line-height: 1.3
+    &-ta
+        font-family: Gotham Pro
+        padding-bottom: 50px
+        &-wrap
+            position: relative
+            &::after
+                position: absolute
+                content: ''
+                display: inline-block
+                width: 1000px
+                height: 568px
+                background-image: url(../assets/meth/course/sparkles-bg.png)
+                background-size: cover
+                background-position: center center
+                background-repeat: no-repeat
+                top: -160px
+                left: -460px
+            &__img
+                width: 990px
+                position: relative
+                top: -50px
+                z-index: 5
+                right: 350px
+
+        &-list
+            &-item
+                margin-bottom: 50px
+                font-size: 20px
+                line-height: 140%
+                position: relative
+                &:first-child::before
+                    position: absolute
+                    content: ''
+                    display: inline-block
+                    width: 150px
+                    height: 40px
+                    background-image: url(../assets/meth/course/arrow-top.svg)
+                    background-size: cover
+                    background-position: center center
+                    background-repeat: no-repeat
+                    top: 13px
+                    left: -180px
+                    z-index: 5
+                &:nth-child(2)::before
+                    position: absolute
+                    content: ''
+                    display: inline-block
+                    width: 158px
+                    height: 15px
+                    background-image: url(../assets/meth/course/arrow-mid.svg)
+                    background-size: cover
+                    background-position: center center
+                    background-repeat: no-repeat
+                    top: 7px
+                    left: -187px
+                    z-index: 5
+                &:nth-child(3)::before
+                    position: absolute
+                    content: ''
+                    display: inline-block
+                    width: 150px
+                    height: 15px
+                    background-image: url(../assets/meth/course/arrow-mid.svg)
+                    background-size: cover
+                    background-position: center center
+                    background-repeat: no-repeat
+                    top: 7px
+                    left: -187px
+                    z-index: 5
+                &:last-child::before
+                    position: absolute
+                    content: ''
+                    display: inline-block
+                    width: 150px
+                    height: 40px
+                    background-image: url(../assets/meth/course/arrow-btm.svg)
+                    background-size: cover
+                    background-position: center center
+                    background-repeat: no-repeat
+                    top: -24px
+                    left: -180px
+                    z-index: 5
+                &__span
+                    color: rgba(255, 255, 255, 0.2)
+                    position: relative
+                &__text
+                    color: #fff
+    &-learn
+        font-family: Gotham Pro
+        padding-top: 50px
+        &-card
+            width: 100%
+
+            background-image: url(../assets/meth/know-how.png)
+            background-size: contain
+            background-position: center center
+            border-radius: 30px
+            overflow: hidden
+            position: relative
+            z-index: 5
+            &-wrap
+                width: 100%
+                padding-left: 90px
+                padding-right: 90px
+                padding-top: 70px
+                padding-bottom: 70px
+                background: linear-gradient(80.4deg, rgba(0, 102, 255, 0.8) -6.05%, rgba(25, 50, 138, 0.7) 100%)
+                &__title
+                    font-family: Gotham Pro Narrow
+                    font-weight: bold
+                    font-size: 40px
+                    line-height: 120%
+                    color: #fff
+                    margin-bottom: 60px
+                &__button
+                    background: #fff
+                    color: #0066ff
+                    path
+                        transition: fill 0.3s
+                    &:hover
+                        color: #fff
+                        path
+                            fill: #fff
+                            transition: fill 0.3s
+                    &--span
+                        font-family: Gotham Pro Narrow
+                        color: #0066ff
+                        letter-spacing: 1px
+                    &-img
+                        width: 15px
+                        margin-right: 10px
+    &-tired
+        position: relative
+        padding-bottom: 0
+        font-family: Gotham Pro
+        &::after
+            position: absolute
+            content: ''
+            display: inline-block
+            width: 600px
+            height: 1000px
+            background-image: url(../assets/meth/tired/cloud-right.png)
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+            top: 385px
+            right: 0
+        &-relative
+            position: relative
+        &__title
+            font-family: Gotham Pro Narrow
+            color: #fff
+            & b
+                color: #F32A2A
+        &__img
+            position: absolute
+            width: 950px
+            top: -100px
+            right: -100px
+        &-list
+
+            &__item
+                color: #fff
+                font-size: 20px
+                line-height: 150%
+                margin-left: 30px
+                margin-bottom: 30px
+                position: relative
+                &::before
+                    position: absolute
+                    display: inline-block
+                    width: 12px
+                    height: 12px
+                    content: ''
+                    background-image: url(../assets/meth/before.svg)
+                    background-repeat: no-repeat
+                    background-size: contain
+                    top: 10px
+                    left: -30px
+                &:last-child
+                    margin-bottom: 130px
+    &-blocks
+        font-family: Gotham Pro
+        &__title
+            font-family: Gotham Pro Narrow
+            color: #fff
+            margin-bottom: 60px
+            & b
+                color: #0066FF
+        &-items
+            display: grid
+            grid-template-rows: 1fr 1fr
+            grid-template-columns: 1fr 1fr
+            grid-gap: 20px
+            position: relative
+            z-index: 5
+            &-block
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                padding: 35px 60px
+                border: 2px solid rgba(255, 255, 255, 0.1)
+                filter: drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.05))
+                border-radius: 15px 15px 15px 15px
+                cursor: pointer
+                transition: background-color 0.3s, box-shadow 0.3s, border 0.3s
+                &--first
+                    border-radius: 15px 15px 0px 15px
+                &--second
+                    border-radius: 15px 15px 15px 0px
+                &--third
+                    border-radius: 15px 0px 15px 15px
+                &--fourth
+                    border-radius: 0px 15px 15px 15px
+                &:hover
+                    border: 2px solid #0066FF
+                &--active
+                    background-color: #0066FF
+                    box-shadow: 0px 10px 25px rgba(0, 102, 255, 0.3), inset 0px -15px 20px rgba(202, 223, 255, 0.15)
+                    transition: background-color 0.3s, box-shadow 0.3s
+                    .meth-blocks-items-block__subtitle
+                        color: rgba(255, 255, 255, 0.5)
+                        transition: color 0.2s
+                &__title
+                    color: #fff
+                    font-family: Gotham Pro Narrow
+                    font-weight: bold
+                    font-size: 22px
+                    line-height: 100%
+                    margin-bottom: 10px
+                    text-transform: uppercase
+                    letter-spacing: 0.1em
+                &__subtitle
+                    font-size: 14px
+                    line-height: 140%
+                    color: rgba(255, 255, 255, 0.2)
+                    transition: color 0.2s
+        &-desc
+            margin-left: 70px
+            &:not(:first-child)
+                display: none
+            &__title
+                font-family: Gotham Pro Narrow
+                color: #fff
+                font-weight: bold
+                font-size: 24px
+                line-height: 120%
+                margin-bottom: 25px
+                text-transform: uppercase
+                & b
+                    color: rgba(255, 255, 255, 0.5)
+                    font-weight: normal
+            &-list
+                &__item
+                    color: #fff
+                    font-size: 20px
+                    line-height: 150%
+                    margin-left: 30px
+                    margin-bottom: 20px
+                    position: relative
+                    &::before
+                        position: absolute
+                        display: inline-block
+                        width: 12px
+                        height: 12px
+                        content: ''
+                        background-image: url(../assets/meth/before.svg)
+                        background-repeat: no-repeat
+                        background-size: contain
+                        top: 10px
+                        left: -30px
+    &-after
+        font-family: Gotham Pro
+        &-wrap
+            background-color: #fff
+            padding-top: 60px
+            padding-left: 80px
+            padding-bottom: 25px
+            padding-right: 125px
+            border-radius: 30px
+            position: relative
+            background-image: url(../assets/meth/after/card-bg.png)
+            background-size: cover
+            &::before
+                position: absolute
+                content: ''
+                display: inline-block
+                width: 271px
+                height: 841px
+                background-image: url(../assets/meth/after/sparkles.png)
+                background-size: cover
+                background-position: center center
+                background-repeat: no-repeat
+                top: 0
+                left: -275px
+            &::after
+                position: absolute
+                content: ''
+                display: inline-block
+                width: 271px
+                height: 841px
+                background-image: url(../assets/meth/after/sparkles-blue.png)
+                background-size: cover
+                background-position: center center
+                background-repeat: no-repeat
+                top: 0
+                right: -272px
+
+            &__title
+                font-family: Gotham Pro Narrow
+                margin-bottom: 50px
+            &-list
+                &-item
+                    display: flex
+                    align-items: center
+                    margin-bottom: 50px
+                    &__img
+                        width: 100px
+                    &__text
+                        margin-left: 25px
+                        font-size: 20px
+                        line-height: 150%
+
+            &__img
+                position: absolute
+                bottom: -90px
+                right: -90px
+                width: 430px
+                z-index: 2
+                transform: rotate(-20deg)
+    &-who
+        font-family: Gotham Pro
+        padding-top: 0
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            display: inline-block
+            width: 380px
+            height: 1084px
+            background-image: url(../assets/meth/who/money.png)
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+            top: -255px
+            right: 0
+        &__img
+            position: absolute
+            top: -150px
+            right: -140px
+            width: 990px
+        &__title
+            font-family: Gotham Pro Narrow
+            color: #fff
+            margin-bottom: 30px
+            & b
+                color: #0066FF
+        &-list
+            &__item
+                color: #fff
+                font-size: 20px
+                line-height: 150%
+                margin-left: 30px
+                margin-bottom: 15px
+                position: relative
+                &::before
+                    position: absolute
+                    display: inline-block
+                    width: 12px
+                    height: 12px
+                    content: ''
+                    background-image: url(../assets/meth/before.svg)
+                    background-repeat: no-repeat
+                    background-size: contain
+                    top: 10px
+                    left: -30px
+    &-edu
+        font-family: Gotham Pro
+        padding-bottom: 50px
+        &__title
+            font-family: Gotham Pro Narrow
+            color: #fff
+            margin-bottom: 40px
+            & b
+                color: #0066FF
+        &-list
+            &__item
+                color: #fff
+                font-size: 20px
+                line-height: 150%
+                margin-left: 30px
+                margin-bottom: 15px
+                position: relative
+                &::before
+                    position: absolute
+                    display: inline-block
+                    width: 12px
+                    height: 12px
+                    content: ''
+                    background-image: url(../assets/meth/before.svg)
+                    background-repeat: no-repeat
+                    background-size: contain
+                    top: 10px
+                    left: -30px
+        &__img
+            position: absolute
+            width: 1043px
+            top: -420px
+            left: -140px
+            z-index: 5
+    &-tool
+        font-family: Gotham Pro
+        padding-top: 50px
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            display: inline-block
+            width: 380px
+            height: 1084px
+            background-image: url(../assets/meth/tool/smoke.png)
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+            top: -255px
+            right: 0
+        &__title
+            font-family: Gotham Pro Narrow
+            color: #fff
+            margin-bottom: 30px
+            & b
+                color: #F32A2A
+        &-list
+            position: relative
+            z-index: 5
+            &__item
+                color: #fff
+                font-size: 18px
+                line-height: 150%
+                margin-bottom: 25px
+                &--white
+                    display: inline-block
+                    padding: 25px 40px
+                    background-color: #fff
+                    color: #152536
+                    font-size: 20px
+                    border-radius: 10px
+        &__img
+            position: absolute
+            top: -380px
+            right: -131px
+            width: 1000px
+            z-index: 5
+    &-pack
+        font-family: Gotham Pro
+        padding: 50px 0px
+        position: relative
+        .meth-pack-slider .slick-list.draggable
+            overflow: hidden
+        &::after
+            position: absolute
+            content: ''
+            display: inline-block
+            width: 380px
+            height: 1084px
+            background-image: url(../assets/meth/packs/sparkles-red.png)
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+            top: 0
+            right: 0
+        &::before
+            position: absolute
+            content: ''
+            display: inline-block
+            width: 380px
+            height: 1084px
+            background-image: url(../assets/meth/packs/sparkles-blue.png)
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+            top: 0
+            left: 0
+        .slick-list
+            overflow: unset
+        &__title
+            font-family: Gotham Pro Narrow
+            color: #fff
+            text-align: center
+            margin-bottom: 70px
+            & b
+                color: #0066FF
+        &-slider
+            display: flex
+            justify-content: space-evenly
+            position: relative
+            z-index: 5
+            .slick-list.draggable
+                overflow: visible
+            &-wrap
+                position: relative
+            &-card
+                overflow: hidden
+                position: relative
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                width: 370px
+                height: 100%
+                background: linear-gradient(154.77deg, #19212C 0%, #141B24 100%)
+                border: 1px solid rgba(255, 255, 255, 0.03)
+                box-sizing: border-box
+                box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1)
+                border-radius: 15px
+                padding: 30px
+                &--first
+                    &::before
+                        position: absolute
+                        content: ''
+                        display: inline-block
+                        width: 300px
+                        height: 300px
+                        background: #0066FF
+                        mix-blend-mode: screen
+                        opacity: 0.6
+                        filter: blur(150px)
+                        top: -150px
+                        left: -150px
+                        border-radius: 50%
+                    .meth-pack-slider-card-header__count
+                        color: #0066ff
+                    .meth-pack-slider-card-list__item
+                        &::before
+                            position: absolute
+                            display: inline-block
+                            width: 12px
+                            height: 12px
+                            content: ''
+                            background-image: url(../assets/meth/blue-before.svg)
+                            background-repeat: no-repeat
+                            background-size: contain
+                            top: 4px
+                            left: -25px
+                &--second
+                    &::before
+                        position: absolute
+                        content: ''
+                        display: inline-block
+                        width: 300px
+                        height: 300px
+                        background: #04C700
+                        mix-blend-mode: screen
+                        opacity: 0.6
+                        filter: blur(150px)
+                        top: -150px
+                        left: -150px
+                        border-radius: 50%
+                    .meth-pack-slider-card-header__count
+                        color: #04C700
+                    .meth-pack-slider-card-list__item
+                        &::before
+                            position: absolute
+                            display: inline-block
+                            width: 12px
+                            height: 12px
+                            content: ''
+                            background-image: url(../assets/meth/green-before.svg)
+                            background-repeat: no-repeat
+                            background-size: contain
+                            top: 4px
+                            left: -25px
+                &--third
+                    &::before
+                        position: absolute
+                        content: ''
+                        display: inline-block
+                        width: 300px
+                        height: 300px
+                        background: #F32A2A
+                        mix-blend-mode: screen
+                        opacity: 0.6
+                        filter: blur(150px)
+                        top: -150px
+                        left: -150px
+                        border-radius: 50%
+                    .meth-pack-slider-card-header__count
+                        color: #F32A2A
+                    .meth-pack-slider-card-list__item
+                        &::before
+                            position: absolute
+                            display: inline-block
+                            width: 12px
+                            height: 12px
+                            content: ''
+                            background-image: url(../assets/meth/red-before.svg)
+                            background-repeat: no-repeat
+                            background-size: contain
+                            top: 4px
+                            left: -25px
+                &-header
+                    position: relative
+                    padding-bottom: 30px
+                    // border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+                    &__title
+                        font-family: Gotham Pro Narrow
+                        color: #fff
+                        font-weight: bold
+                        font-size: 24px
+                        line-height: 120%
+                        margin-bottom: 10px
+                        text-transform: uppercase
+                    &__count
+                        font-family: Gotham Pro Narrow
+                        font-style: normal
+                        font-weight: bold
+                        font-size: 14px
+                        line-height: 100%
+                        text-transform: uppercase
+                        letter-spacing: 0.05em
+                    &__img
+                        position: absolute
+                        top: -30px
+                        right: -17px
+                        width: 150px
+                        z-index: 2
+                    &::after
+                        position: absolute
+                        content: ''
+                        display: inline-block
+                        width: 200%
+                        height: 1px
+                        background: rgba(255, 255, 255, 0.1)
+                        bottom: 0
+                        left: -50%
+                        right: 0
+                &-body
+                    margin-top: 30px
+                &-bottom
+                    margin-top: 45px
+                &__desc
+                    color: #fff
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 150%
+                    margin-bottom: 20px
+                &-list
+                    &__item
+                        color: #fff
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 150%
+                        margin-left: 30px
+                        position: relative
+                        &:not(:last-child)
+                            margin-bottom: 15px
+                        &--disable
+                            opacity: 0.3
+                            &::before
+                                position: absolute
+                                display: inline-block
+                                width: 12px
+                                height: 12px
+                                content: ''
+                                background-image: url(../assets/meth/before.svg)
+                                background-repeat: no-repeat
+                                background-size: contain
+                                top: 4px
+                                left: -25px
+                &-price
+                    margin-bottom: 30px
+                    &__current
+                        font-family: Gotham Pro Narrow
+                        font-style: normal
+                        font-weight: bold
+                        font-size: 24px
+                        line-height: 120%
+                        text-transform: uppercase
+                        color: #fff
+                        margin-right: 15px
+                    &__old
+                        font-family: Gotham Pro Narrow
+                        font-style: normal
+                        font-weight: bold
+                        font-size: 16px
+                        line-height: 120%
+                        text-transform: uppercase
+                        color: rgba(255, 255, 255, 0.3)
+                        position: relative
+                        &::before
+                            position: absolute
+                            content: ''
+                            display: inline-block
+                            width: 100%
+                            height: 2px
+                            background-color: #F32A2A
+                            top: 50%
+                            left: 0
+                &__button
+                    width: 100%
+                    margin-bottom: 20px
+                    padding-left: 0
+                    padding-right: 0
+                    &--closed
+                        background-color: #202B3A
+                        pointer-events: none
+                        box-shadow: unset
+
+                &-credit
+                    padding: 20px 65px
+                    width: 100%
+                    &:hover
+                        .meth-pack-slider-card-credit__name
+                            color: #fff
+                    &__name
+                        color: #152536
+                        text-align: left
+                        font-size: 14px
+                        line-height: 120%
+                        font-weight: bold
+                    &__price
+                        font-size: 14px
+                        text-align: left
+                        line-height: 120%
+                        font-weight: bold
+                    &--closed
+                        opacity: 0.5
+                        pointer-events: none
+                    &--disable
+                        display: flex
+                        flex-direction: column
+                        align-items: flex-start
+                        background-color: rgba(255,255,255,0.05)
+                        color: #fff
+                        font-size: 12px
+                        pointer-events: none
+                        box-shadow: unset
+                        padding-left: 44px
+                        padding-top: 18px
+                        padding-bottom: 18px
+                        padding-right: 22px
+                        border: none
+                        .meth-pack-slider-card-credit__name
+                            color: #fff
+                            font-weight: normal
+                            font-size: 12px
+                            margin-bottom: 10px
+                            position: relative
+                            &::before
+                                position: absolute
+                                content: ''
+                                display: inline-block
+                                width: 16px
+                                height: 16px
+                                background-image: url(../assets/meth/info.svg)
+                                background-size: cover
+                                background-position: center center
+                                background-repeat: no-repeat
+                                top: 0
+                                left: -25px
+                        .meth-pack-slider-card-credit__price
+                            color: #fff
+                            font-weight: normal
+                            font-size: 12px
+        .slick-prev,
+        .slick-next
+            top: 102%
+            left: unset
+            z-index: 10
+            content: ""
+            display: block
+            width: 64px
+            height: 64px
+            background: #0066ff
+            box-shadow: 0px 10px 25px rgba(0, 102, 255, 0.3)
+            border-radius: 12px
+            transform: translate(0, -50%)
+            &:before
+                content: ""
+                display: block
+                width: 100%
+                height: 100%
+                background-image: url(../assets/meth/slider-arrow.svg)
+                background-position: center
+                background-size: 41px
+                background-repeat: no-repeat
+                &:hover
+                    transform: scale(1.1) translateY(-20px)
+        .slick-prev
+            left: 24vw
+            &:before
+                transform: scaleX(-1) rotate(0deg)
+        .slick-next
+            right: 24vw
+        .slick-dots
+            li
+                width: 5px
+                height: 5px
+                margin-left: 3px
+                margin-right: 3px
+                button
+                    width: 100%
+                    height: 100%
+                    &:before
+                        width: 100%
+                        height: 100%
+                        content: ""
+                        display: block
+                        border-radius: 5px
+                        background-color: #0066ff
+            .slick-active
+                width: 30px
+    &-reviews
+        font-family: Gotham Pro
+        padding-top: 50px
+        padding-bottom: 100px
+        position: relative
+        &::before
+            position: absolute
+            content: ''
+            display: inline-block
+            width: 300px
+            height: 130%
+            background-image: url(../assets/meth/reviews/smoke-left.png)
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+            top: 0
+            left: 0
+        &::after
+            position: absolute
+            content: ''
+            display: inline-block
+            width: 300px
+            height: 130%
+            background-image: url(../assets/meth/reviews/smoke-right.png)
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+            top: -230px
+            right: 0
+        &__title
+            font-family: Gotham Pro Narrow
+            font-weight: bold
+            font-size: 40px
+            line-height: 120%
+            text-align: center
+            text-transform: uppercase
+            color: #ffffff
+            margin-bottom: 40px
+        .slick-list.draggable
+            overflow: visible
+        &-slider
+            position: relative
+            z-index: 10
+            &-slide
+                box-sizing: border-box
+                &__inner
+                    max-width: 830px
+                    width: 100%
+                    margin-left: auto
+                    margin-right: auto
+                    background-image: url(../assets/meth/reviews/bg.png)
+                    background-size: cover
+                    border-radius: 30px
+                    padding-top: 42px
+                    padding-left: 50px
+                    padding-right: 50px
+                    padding-bottom: 42px
+                    opacity: 0.1
+                    transition: 0.5s all
+                    position: relative
+                    overflow: hidden
+                    &::after
+                        position: absolute
+                        content: ''
+                        display: inline-block
+                        width: 100%
+                        height: 100%
+                        background: rgba(244, 244, 244, 0.9)
+                        top: 0
+                        left: 0
+                        right: 0
+                        bottom: 0
+                &--prev
+                    .meth-reviews-slider-slide__inner
+                        margin-right: -20vw
+                        transition: 0.5s all
+                &--next
+                    .meth-reviews-slider-slide__inner
+                        transition: 0.5s all
+                        margin-left: -20vw
+                &-profile
+                    display: flex
+                    justify-content: flex-start
+                    align-items: center
+                    margin-bottom: 20px
+                    position: relative
+                    z-index: 10
+                    &__img
+                        width: 60px
+                        height: 60px
+                        object-fit: cover
+                        margin-right: 25px
+                        border-radius: 10px
+                    &-about
+                        &__name
+                            font-weight: normal
+                            font-size: 20px
+                            line-height: 150%
+                            color: #152536
+                        &__position
+                            font-family: Gotham Pro
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 14px
+                            line-height: 150%
+                            color: rgba(21, 37, 54, 0.4)
+                        &__link
+                            font-weight: normal
+                            font-size: 14px
+                            line-height: 150%
+                            color: #0066ff
+                    &__occupie
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 150%
+                        color: #152536
+                        opacity: 0.4
+                        padding-left: 10px
+                        margin-bottom: 24px
+                &__review
+                    font-size: 20px
+                    line-height: 150%
+                    color: #152536
+                    position: relative
+                    z-index: 10
+            .slick-current
+                transition: 0.5s all
+                .meth-reviews-slider-slide__inner
+                    opacity: 1
+                    transform: scale(1)
+                    transition: 0.6s all
+            .slick-prev,
+            .slick-next
+                top: 50%
+                left: unset
+                z-index: 10
+                content: ""
+                display: block
+                width: 64px
+                height: 64px
+                background: #0066ff
+                box-shadow: 0px 10px 25px rgba(0, 102, 255, 0.3)
+                border-radius: 12px
+                transform: translate(0, -50%)
+                position: absolute
+                color: transparent
+                &:before
+                    content: ""
+                    display: block
+                    width: 100%
+                    height: 100%
+                    background-image: url(../assets/meth/slider-arrow.svg)
+                    background-position: center
+                    background-size: 41px
+                    background-repeat: no-repeat
+                &:hover
+                    transform: scale(1.1) translateY(-20px)
+            .slick-prev
+                left: 24vw
+                &:before
+                    transform: scaleX(-1)
+            .slick-next
+                right: 24vw
+            .slick-dots
+                position: absolute
+                bottom: -25px
+                list-style: none
+                display: block
+                text-align: center
+                padding: 0
+                margin: 0
+                width: 100%
+                display: flex
+                justify-content: center
+                li
+                    width: 5px
+                    height: 5px
+                    margin-left: 3px
+                    margin-right: 3px
+                    
+                    button
+                        width: 100%
+                        height: 100%
+                        color: transparent
+                        &:before
+                            width: 100%
+                            height: 100%
+                            content: ""
+                            display: block
+                            border-radius: 5px
+                            background-color: #0066ff
+                .slick-active
+                    width: 30px
+
+    &-faq
+        font-family: Gotham Pro
+        position: relative
+        &::before
+            position: absolute
+            content: ''
+            display: inline-block
+            width: 500px
+            height: 500px
+            border-radius: 50%
+            background: #0066FF
+            mix-blend-mode: screen
+            opacity: 1
+            filter: blur(350px)
+            bottom: 0
+            left: -250px
+        &::after
+            position: absolute
+            content: ''
+            display: inline-block
+            width: 500px
+            height: 500px
+            border-radius: 50%
+            background: #F32A2A
+            mix-blend-mode: screen
+            opacity: 1
+            filter: blur(350px)
+            top: -380px
+            right: 0px
+        &__title
+            font-family: Gotham Pro Narrow
+            color: #fff
+            text-align: center
+            margin-bottom: 50px
+        &-list
+            margin-bottom: 50px
+            &-card
+                width: 100%
+                border: 5px solid rgba(255, 255, 255, 0.1)
+                box-sizing: border-box
+                border-radius: 12px
+                margin-bottom: 20px
+                transition: border 0.3s
+                &:hover
+                    border: 5px solid rgba(0, 102, 255, 1)
+                    transition: border 0.3s
+                &.blue
+                    border: 5px solid rgba(0, 102, 255, 1)
+                    transition: border 0.3s
+                &-top
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    padding: 30px
+                    cursor: pointer
+
+                    &.active .meth-faq-list-card-top__img
+                        transform: rotate(0deg)
+                        transition: transform 0.3s
+                    &.active
+                        position: relative
+                        &::after
+                            position: absolute
+                            content: ''
+                            display: inline-block
+                            width: 200px
+                            height: 2px
+                            background: rgba(255, 255, 255, 0.1)
+                            bottom: 0
+
+                    &__title
+                        color: #fff
+                        font-family: Gotham Pro Narrow
+                        font-weight: bold
+                        font-size: 20px
+                        line-height: 120%
+                        letter-spacing: 0.05em
+                        text-transform: uppercase
+                    &__img
+                        width: 24px
+                        cursor: pointer
+                        transform: rotate(-90deg)
+                        transition: transform 0.3s
+                &-bottom
+                    display: none
+                    padding-top: 25px
+                    padding-bottom: 30px
+                    padding-left: 30px
+                    padding-right: 30px
+                    &__desc
+                        font-weight: normal
+                        font-size: 18px
+                        line-height: 150%
+                        color: #fff
+        &__btn
+            margin: 0 auto
+    &-form
+        font-family: Gotham Pro
+
+        &-container
+            width: 100%
+            padding-top: 70px
+            padding-left: 70px
+            padding-bottom: 85px
+            background: linear-gradient(154.77deg, #19212C 0%, #141B24 100%)
+            border: 1px solid rgba(255, 255, 255, 0.03)
+            box-sizing: border-box
+            box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1)
+            border-radius: 15px
+            background-image: url(../assets/meth/form/bg.png)
+            background-repeat: no-repeat
+            background-size: cover
+            &-offer
+                position: relative
+                z-index: 2
+                &__img
+                    position: absolute
+                    width: 1000px
+                    right: -757px
+                    bottom: -245px
+                    z-index: 1
+                &__title
+                    font-family: Gotham Pro Narrow
+                    color: #fff
+                    margin-bottom: 30px
+                    & b
+                        color: #0066ff
+                &__subtitle
+                    color: #fff
+                    font-weight: normal
+                    font-size: 20px
+                    line-height: 140%
+                    margin-bottom: 50px
+                &-form
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-between
+                    &__input
+                        width: 47%
+                        padding: 30px
+                        margin-bottom: 20px
+                        background: rgba(255, 255, 255, 0.05)
+                        border: 1px solid rgba(255, 255, 255, 0.05)
+                        box-sizing: border-box
+                        border-radius: 12px
+                        color: #fff
+                        transition: border 0.3s
+                        &:hover
+                            border: 1px solid #0066FF
+                            transition: border 0.3s
+                        &:focus
+                            border: 1px solid #0066FF
+                            transition: border 0.3s
+                    &__btn
+                        width: 100%
+                        margin-bottom: 10px
+                    &-wrap
+                        display: flex
+                        align-items: center
+                        &__checkbox
+                            width: 14px
+                            height: 14px
+                            background: #0066FF
+                            border-radius: 3px
+                            display: inline-flex
+                            width: 14px
+                            height: 14px
+                            align-items: center
+                            justify-content: center
+                            position: relative
+                            cursor: pointer
+                            margin-right: 10px
+                            &::after
+                                position: absolute
+                                content: ''
+                                display: inline-block
+                                background-image: url(../assets/meth/checkmark.svg)
+                                background-size: cover
+                                background-position: center center
+                                background-repeat: no-repeat
+                                top: 3px
+                                left: 3px
+                                right: 3px
+                                bottom: 3px
+                            &--hidden
+                        &__desc
+                            color: #fff
+                            font-weight: normal
+                            font-size: 12px
+                            line-height: 100%
+                        &__link
+                            color: #fff
+                            font-size: 12px
+                            font-weight: normal
+                            text-decoration: underline
+                            &:hover
+                                text-decoration: none
+    &-footer
+        background: #11171F
+        padding-top: 30px
+        padding-bottom: 30px
+        position: relative
+        &::before
+            position: absolute
+            content: ''
+            display: inline-block
+            width: 800px
+            height: 400px
+            background-image: url(../assets/meth/footer/smoke-left.png)
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+            bottom: 0
+            left: 0
+        &::after
+            position: absolute
+            content: ''
+            display: inline-block
+            width: 800px
+            height: 400px
+            background-image: url(../assets/meth/footer/smoke-right.png)
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+            bottom: 0
+            right: 0
+        &-inner
+            display: flex
+            align-items: center
+            justify-content: space-between
+            position: relative
+            z-index: 5
+            &__name
+                font-weight: normal
+                font-size: 12px
+                line-height: 130%
+                color: #949393
+            &__link
+                font-weight: normal
+                font-size: 12px
+                line-height: 130%
+                text-decoration: underline
+                color: #949393
+                &:hover
+                    text-decoration: none
+
+// POPUPS
+// POPUPS
+.popups
+    position: fixed
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 10
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: none
+    &.active
+        display: flex
+    &-overlay
+        position: absolute
+        z-index: 1
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        background: rgba(10, 11, 9, 0.65)
+        backdrop-filter: blur(15px)
+        cursor: pointer
+
+.popup
+    padding: 40px 30px
+    background-color: #fff
+    border: 1px solid rgba(10, 11, 9, 0.05)
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.25)
+    min-width: 430px
+    width: auto
+    position: relative
+    z-index: 2
+    display: none
+    .g-recaptcha
+        width: 100%
+        margin-bottom: 10px
+    .quiz-form__wrap .quiz__input:first-child
+        margin-right: 10px
+    &-overflow
+        max-height: 75vh
+        overflow-y: scroll
+        &::-webkit-scrollbar
+            width: 0
+    &.active
+        display: block
+    &[data-target=popup-thanks]
+        text-align: center
+    &-mini
+        max-width: 430px
+        padding: 40px 28px
+    .question-form__desc a
+        color: #000
+    .question-form__check
+        border-color: #000
+    .question-form__checkbox:checked + .question-form__check,
+    .question-form__checkbox[checked=checked] + .question-form__check
+        background-image: url(./img/icons/black-check.svg)
+    &__close
+        width: 18px
+        height: 18px
+        display: inline-block
+        position: absolute
+        background: url(./img/icons/cross.svg) no-repeat center
+        background-size: cover
+        top: -28px
+        right: -28px
+        cursor: pointer
+    &__subtitle
+        text-align: center
+        line-height: 1.4
+        font-size: 16px
+        margin-bottom: 20px
+    &-form
+        &__submit
+            width: 100%
+        &__desc
+            line-height: 1.5
+            font-size: 14px
+            margin-bottom: 6px
+        &__textarea
+            margin-bottom: 10px
+            width: 100%
+            display: inline-block
+            padding: 20px
+            background: #FFFFFF
+            border: 1px solid rgba(10, 11, 9, 0.05)
+            border-radius: 4px
+            height: 124px
+            resize: none
+.meth-popup
+    background: linear-gradient(154.77deg, #19212C 0%, #141B24 100%)
+    border: 1px solid rgba(255, 255, 255, 0.03)
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.97)
+    border-radius: 15px
+    display: block
+    position: relative
+    &::after
+        position: absolute
+        content: ''
+        display: inline-block
+        width: 100%
+        height: 1px
+        background-color: rgba(255, 255, 255, 0.05)
+        top: 145px
+        left: 0
+        right: 0
+    &-inner
+        overflow: hidden
+        position: relative
+
+    &-wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 80px
+        &__img
+            position: absolute
+            width: 175px
+            right: 10px
+            z-index: 5
+        &-info
+            display: flex
+            flex-direction: column
+            &__title
+                margin-bottom: 10px
+
+            &__pack
+                font-family: Gotham Pro Narrow
+                font-style: normal
+                font-weight: bold
+                font-size: 18px
+                line-height: 120%
+                letter-spacing: 0.05em
+                text-transform: uppercase
+                margin-bottom: 10px
+                br
+                    display: none
+
+    &-card
+        position: relative
+        padding: 0
+        .meth-popup-inner
+            padding: 40px
+            border-radius: 15px
+        &::after
+            position: absolute
+            content: ''
+            display: inline-block
+            width: 100%
+            height: 1px
+            background-color: rgba(255, 255, 255, 0.05)
+            top: 225px
+            left: 0
+            right: 0
+        .meth-popup-form__card:not(:last-child)
+            margin-bottom: 10px
+        &--first
+            .meth-popup-wrap-info__pack
+                color: #0066ff
+            .meth-popup-inner::after
+                position: absolute
+                content: ''
+                display: inline-block
+                width: 300px
+                height: 300px
+                background-image: url()
+                background: #0066ff
+                mix-blend-mode: screen
+                opacity: 0.6
+                filter: blur(150px)
+                border-radius: 50%
+                top: -150px
+                right: -150px
+        &--second
+            .meth-popup-wrap-info__pack
+                color: #04c700
+            .meth-popup-inner::after
+                position: absolute
+                content: ''
+                display: inline-block
+                width: 300px
+                height: 300px
+                background-image: url()
+                background: #04c700
+                mix-blend-mode: screen
+                opacity: 0.6
+                filter: blur(150px)
+                border-radius: 50%
+                top: -150px
+                right: -150px
+        &--third
+            .meth-popup-wrap-info__pack
+                color: #f32a2a
+            .meth-popup-inner::after
+                position: absolute
+                content: ''
+                display: inline-block
+                width: 300px
+                height: 300px
+                background-image: url()
+                background: #f32a2a
+                mix-blend-mode: screen
+                opacity: 0.6
+                filter: blur(150px)
+                border-radius: 50%
+                top: -150px
+                right: -150px
+    &-price
+        &__current
+        &__old
+    &__title
+        font-family: Gotham Pro Narrow
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 120%
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 10px
+        color: #fff
+    &__subtitle
+        font-family: Gotham Pro Narrow
+        font-style: normal
+        font-weight: bold
+        font-size: 14px
+        line-height: 120%
+        text-align: center
+        letter-spacing: 0.05em
+        text-transform: uppercase
+        color: #0066FF
+        padding-bottom: 30px
+        position: relative
+
+    &__close
+        z-index: 5
+        &:hover
+            background: url(./img/meth/cross-red.svg) no-repeat center
+    &-form
+        &__subtitle
+            font-family: Gotham Pro Narrow
+            font-style: normal
+            font-weight: bold
+            font-size: 10px
+            line-height: 120%
+            text-align: left
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: #fff
+            margin-bottom: 10px
+            margin-top: 30px
+        &-choice
+            margin-bottom: 20px
+            &-card
+                background: #141b24
+        &-input
+            background: rgba(255, 255, 255, 0.05)
+            border: 1px solid rgba(255, 255, 255, 0.05)
+            box-sizing: border-box
+            border-radius: 12px
+            transition: border 0.3s
+            color: #fff
+            margin-bottom: 20px
+            padding: 30px
+            &:hover
+                border: 1px solid #0066FF
+                transition: border 0.3s
+            &:focus
+                border: 1px solid #0066FF
+                transition: border 0.3s
+        &__submit
+            width: 100%
+            border: none
+            margin-bottom: 12px
+            &.card-button:hover
+                background-color: #0066ff
+                border-color: unset
+        &__card
+            display: flex
+            align-items: center
+            width: 100%
+
+        &__check
+            border: none
+            width: 14px
+            height: 14px
+            background: #0066FF
+            border-radius: 3px
+            display: inline-flex
+            width: 14px
+            height: 14px
+            align-items: center
+            justify-content: center
+            position: relative
+            cursor: pointer
+            margin-right: 10px
+            &::after
+                position: absolute
+                content: ''
+                display: inline-block
+                background-image: url(./img/meth/checkmark.svg)
+                background-size: cover
+                background-position: center center
+                background-repeat: no-repeat
+                top: 3px
+                left: 3px
+                right: 3px
+                bottom: 3px
+        &__desc
+            font-family: Gotham Pro
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 100%
+            text-align: center
+            color: #FFFFFF
+            & a
+                text-decoration: underline
+                color: #fff
+                &:hover
+                    text-decoration: none
+    &-thanks
+        padding: 0
+        &::after
+            display: none
+
+        .meth-popup-inner
+            padding: 50px 40px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &::after
+                position: absolute
+                content: ''
+                display: inline-block
+                width: 300px
+                height: 300px
+                background-image: url()
+                background: #0066ff
+                mix-blend-mode: screen
+                opacity: 0.6
+                filter: blur(150px)
+                border-radius: 50%
+                top: -120px
+                right: 22%
+        &__title
+            font-family: Gotham Pro Narrow
+            font-style: normal
+            font-weight: bold
+            font-size: 40px
+            line-height: 120%
+            text-align: center
+            text-transform: uppercase
+            margin-bottom: 10px
+            color: #fff
+        &__subtitle
+            font-family: Gotham Pro Narrow
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 120%
+            text-align: center
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: #0066ff
+            margin-bottom: 40px
+        &__img
+            width: 100px
+            height: 100px
+            margin-bottom: 30px
+    &-learn
+        width: 770px
+        background: url(./img/meth/know-how.png) center center no-repeat
+        background-size: cover
+        padding: 0
+        border-radius: 30px
+        &-inner
+            width: 100%
+            height: 100%
+            background: linear-gradient(270deg, rgba(0, 102, 255, 0.3) -14.58%, rgba(25, 50, 138, 0.95) 68.13%)
+            border-radius: 30px
+            padding: 40px
+            justify-content: start
+            button
+                padding-top: 20px
+                padding-bottom: 20px
+                padding-left: 45px
+                padding-right: 45px
+                width: auto
+                &:hover
+                    box-shadow: unset
+
+                    path
+                        fill: #fff
+                        transition: fill 0.3s
+        &__img
+            position: absolute
+            bottom: 0
+            right: 0
+            width: 300px
+            z-index: 5
+        &__title
+            font-family: Gotham Pro Narrow
+            font-style: normal
+            font-weight: bold
+            font-size: 32px
+            line-height: 120%
+            text-transform: uppercase
+            color: #FFFFFF
+            text-align: left
+            margin-bottom: 165px
+.meth-popup-form-choice
+    margin-bottom: 20px
+    &-card
+        background: #19212C
+        padding-top: 20px
+        padding-bottom: 20px
+        padding-left: 40px
+        padding-right: 40px
+        position: relative
+        &:first-child
+            border: 1px solid #ff9900
+            border-radius: 12px
+            path
+                fill: #ff9900
+                transition: fill 0.1s
+            &:hover
+                &::after
+                    position: absolute
+                    content: ''
+                    display: inline-block
+                    width: 100%
+                    height: 100%
+                    top: -3px
+                    left: -3px
+                    right: 0
+                    bottom: 0
+                    border: 3px solid #ff9900
+                    border-radius: 12px
+            &.active
+                background: #FF9900
+                box-shadow: 0px 10px 25px rgba(255, 153, 0, 0.3), inset 0px -15px 20px rgba(202, 223, 255, 0.15)
+                path
+                    fill: #fff
+                    transition: fill 0.1s
+
+        &:nth-child(2)
+            border: 1px solid #0088CC
+            border-radius: 12px
+            path
+                fill: #1d95d3
+                transition: fill 0.1s
+            &:hover
+                &::after
+                    position: absolute
+                    content: ''
+                    display: inline-block
+                    width: 100%
+                    height: 100%
+                    top: -3px
+                    left: -3px
+                    right: 0
+                    bottom: 0
+                    border: 3px solid #0088cc
+                    border-radius: 12px
+            &.active
+                background: #1d95d3
+                box-shadow: 0px 10px 25px rgba(202, 223, 255, 0.15), inset 0px -15px 20px rgba(202, 223, 255, 0.15)
+                path
+                    fill: #FFFFFF
+                    transition: fill 0.1s
+
+        &:last-child
+            border: 1px solid #43D854
+            border-radius: 12px
+            path
+                fill: #55d96a
+                transition: fill 0.1s
+            &:hover
+                &::after
+                    position: absolute
+                    content: ''
+                    display: inline-block
+                    width: 100%
+                    height: 100%
+                    top: -3px
+                    left: -3px
+                    right: 0
+                    bottom: 0
+                    border: 3px solid #43d854
+                    border-radius: 12px
+            &.active
+                background: #43D854
+                box-shadow: 0px 10px 25px rgba(67, 216, 84, 0.3), inset 0px -15px 20px rgba(202, 223, 255, 0.15)
+                path
+                    fill: #FFFFFF
+                    transition: fill 0.1s
+
+.popup-form-select
+    background: #FFFFFF
+    border: 1px solid rgba(10, 11, 9, 0.05)
+    border-radius: 4px
+    padding: 23px
+    font-size: 16px
+    line-height: 1
+    cursor: pointer
+    position: relative
+    margin-bottom: 10px
+    z-index: 3
+    &::after
+        position: absolute
+        content: ''
+        display: inline-block
+        height: 10px
+        width: 10px
+        top: 50%
+        transform: translateY(-50%)
+        right: 23px
+        background: url(./img/icons/menu-arrow.svg) no-repeat center
+        background-size: cover
+    span
+        display: block
+    &__title
+        padding: 13px 23px
+        &:hover,
+        &.active
+            background: #F7F7F7
+    &-nav
+        position: absolute
+        bottom: 1px
+        transform: translateY(100%)
+        display: none
+        overflow: hidden
+        z-index: 3
+        background: #FFFFFF
+        left: -1px
+        right: -1px
+        border: 1px solid rgba(10, 11, 9, 0.05)
+        border-top: none
+        border-radius: 4px
+        border-top-left-radius: 0
+        border-top-right-radius: 0
+@media (max-width: 1751px)
+
+    .meth-reviews-slider-slide--next .meth-reviews-slider-slide__inner
+        margin-left: -5vw
+
+    .meth-reviews-slider-slide--prev .meth-reviews-slider-slide__inner
+        margin-right: -5vw
+
+    .meth-reviews-slider .slick-next
+        right: 19vw
+
+    .meth-reviews-slider .slick-prev
+        left: 19vw
+@media (max-width: 1640px) and (min-width: 1201px)
+    .meth-reviews
+        padding-bottom: 80px
+@media (min-width: 1400px) and (max-width: 1600px)
+    .first
+        padding: 0
+        width: 100%
+    .blog .slick-arrow-next
+        right: -40px
+    .blog .slick-arrow-prev
+        left: -40px
+@media (max-width: 1480px)
+
+    .meth-reviews-slider-slide--next .meth-reviews-slider-slide__inner
+        margin-left: -5vw
+    .meth-reviews-slider-slide--prev .meth-reviews-slider-slide__inner
+        margin-right: -5vw
+
+    .meth-reviews-slider .slick-next
+        right: 14vw
+
+    .meth-reviews-slider .slick-prev
+        left: 14vw
+
+@media (max-width: 1400px)
+    .blog-slider .slick-list
+        margin: 0 0px
+    .blog .slick-arrow-next
+        right: -35px
+    .blog .slick-arrow-prev
+        left: -35px
+    .first
+        width: 100%
+        padding: 0
+    .team-card__img
+        height: 500px
+    .action__title
+        font-size: 30px
+    .lfp-pp-img
+        top: 14px
+        right: -56px
+    .lfp-we-grid-card__img
+        width: 50px
+        height: 50px
+    .lfp-choice-two-ps__desc
+        br
+            display: none
+    .meth-invest-grid-card:last-child img
+        top: 61px
+    .meth-tired__img
+        right: -200px
+    .meth-first
+        padding-top: 150px
+        padding-bottom: 140px
+    .meth-first__subtitle
+        font-size: 21px
+    .meth-ta-wrap__img
+        right: 420px
+    .meth-ta-wrap::after
+        left: -520px
+    .meth-pack-slider-card
+        width: 350px
+    .meth-after-wrap__img
+        bottom: -150px
+        right: -80px
+        width: 360px
+@media (max-width: 1380px)
+
+    .meth-reviews-slider-slide--next .meth-reviews-slider-slide__inner
+        margin-left: 0
+
+    .meth-reviews-slider-slide--prev .meth-reviews-slider-slide__inner
+        margin-right: 0
+
+    .meth-reviews-slider .slick-next
+        right: 7vw
+
+    .meth-reviews-slider .slick-prev
+        left: 7vw
+@media (max-width: 1200px)
+    .meth-first
+        background-position: right bottom
+        background-repeat: no-repeat
+        background-size: 1140px
+    .meth-first__title
+        font-size: 60px
+    .meth-first__subtitle
+        font-size: 19px
+        margin-bottom: 40px
+        br
+            display: none
+    .meth-invest-grid-card:last-child img
+        top: unset
+        bottom: -2px
+    .meth-ta-list-item
+        font-size: 17px
+        br
+            display: none
+    .meth-ta-list-item__text
+        br
+            display: none
+    .meth-ta-wrap__img
+        width: 880px
+    .meth-ta-wrap::after
+        left: -580px
+    .meth-tired-list__item
+        font-size: 17px
+    .meth-blocks-desc
+        margin-left: 20px
+    .meth-blocks-items-block
+        padding: 25px 40px
+    .meth-blocks-desc-list__item
+        font-size: 17px
+    .meth-after-wrap__img
+        display: none
+    .meth-after-wrap-list-item__text
+        br
+            display: none
+    .meth-who__img
+        top: -100px
+    .meth-edu__img
+        width: 900px
+        top: -300px
+        left: -230px
+    .meth-form-container-offer__subtitle
+        br
+            display: none
+    .meth-form-container-offer__img
+        width: 900px
+        right: -690px
+        bottom: -172px
+    .meth-reviews-slider-slide--next .meth-reviews-slider-slide__inner
+        opacity: 0
+    .meth-reviews-slider-slide--prev .meth-reviews-slider-slide__inner
+        opacity: 0
+@media (max-width: 990px)
+    .meth-header-wrap
+        padding-right: 0
+    .meth-first
+        background-size: 910px
+    .meth-first__title
+        font-size: 40px
+        margin-bottom: 15px
+    .meth-first__subtitle
+        font-size: 14px
+    .meth-first__subtitle::before
+        height: 60px
+    .meth-button
+        padding-left: 50px
+        padding-right: 50px
+    .meth-invest-grid-card
+        padding-top: 25px
+        padding-bottom: 25px
+    .meth-invest-grid-cards
+        grid-template-rows: auto auto auto
+    .meth-invest-grid-card--first
+        grid-column: 1/7
+        grid-row: 1/2
+    .meth-invest-grid-card--second
+        grid-column: 1/7
+        grid-row: 2/3
+    .meth-invest-grid-card--third
+        grid-column: 1/7
+        grid-row: 3/4
+        padding-left: 230px
+    .meth-invest-grid-card:first-child img
+        top: 47px
+    .meth-invest-grid-card:last-child img
+        transform: rotate(90deg)
+        width: 292px
+        top: 50%
+        left: 67px
+        margin-top: -217px
+    .meth-diff-grid-cards
+        grid-template-rows: auto auto
+    .meth-diff-grid-card--first
+        grid-column: 1/7
+        grid-row: 1/2
+    .meth-diff-grid-card--second
+        grid-column: 1/7
+        grid-row: 2/3
+    .meth-ta-wrap__img
+        right: 85px
+    .meth-ta-wrap::after
+        left: -242px
+    .meth-ta-list-item:first-child::before
+        display: none
+    .meth-ta-list-item:nth-child(2)::before
+        display: none
+    .meth-ta-list-item:nth-child(3)::before
+        display: none
+    .meth-ta-list-item:last-child::before
+        display: none
+    .meth-learn-card
+        background-size: cover
+    .meth-learn-card-wrap__title
+        text-align: center
+    .meth-learn-card-wrap__button
+        width: 100%
+    .meth-learn-card-wrap
+        padding-left: 35px
+        padding-right: 35px
+        padding-top: 35px
+        padding-bottom: 35px
+    .meth-who__img
+        right: 220px
+    .meth-blocks-desc
+        margin-top: 20px
+    .meth-edu__img
+        display: none
+    .meth-tool__img
+        position: relative
+        right: 200px
+    .meth-form-container
+        padding-right: 70px
+    .meth-tired__img
+        right: 160px
+    .meth-tired-wrap
+        position: relative
+        display: flex
+        flex-direction: column-reverse
+        height: 100%
+    .meth-learn
+        padding-bottom: 0
+    .meth-tired
+        padding-top: 0
+        .meth-relative
+            min-height: 650px
+    .meth-tired__img
+        width: 700px
+    .meth-tired__title
+        margin-bottom: 20px
+    .meth-after-wrap
+        padding-top: 40px
+        padding-left: 50px
+        padding-bottom: 25px
+        padding-right: 50px
+    .meth-who__img
+        width: 800px
+    .meth-who .meth-relative
+        min-height: 690px
+    .meth-who-list__item
+        font-size: 17px
+    .meth-edu-list__item
+        font-size: 17px
+    .meth-tool__img
+        width: 800px
+        right: 45px
+        position: absolute
+    .meth-tool .meth-relative
+        min-height: 600px
+    .meth-form-container-offer__img
+        right: 173px
+        top: 0
+        position: relative
+    .meth-form-container
+        padding-top: 0
+        background-position: top
+    .meth-pack-slider-card
+        width: 100%
+    .meth-pack__title
+        font-size: 30px
+        margin-bottom: 40px
+    .meth-pack-slider
+        flex-direction: column
+    .meth-pack-slider-card
+        margin-bottom: 40px
+    .meth-pack-slider-card-header
+        margin-bottom: 20px
+    .meth-pack-slider-card-body
+        margin-top: 15px
+    .meth-pack-slider-card__desc
+        margin-bottom: 15px
+    .meth-pack-slider-card-list__item:not(:last-child)
+        margin-bottom: 10px
+    .meth-pack-slider-card-bottom
+        margin-top: 20px
+    .meth-pack-slider-card-price
+        margin-bottom: 20px
+    .meth-pack-slider-card__button
+        padding-top: 25px
+        padding-bottom: 25px
+    .meth-pack-slider-card-credit
+        justify-content: space-evenly
+    .meth-reviews
+        .slick-prev
+            left: -9px
+        .slick-next
+            right: -9px
+    .meth-form
+        .meth-relative
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        .meth-form-container-offer__img
+            right: unset
+            left: unset
+    .meth-pack-slider-card-header__img
+        top: 0
+        right: 0
+        transform: rotate(9deg)
+@media (max-width: 990px)
+    .popup
+        padding: 30px 20px
+        max-height: 95vh
+        max-width: 95vw
+        overflow-y: scroll
+    .popup[data-target=order-pay],
+    .popup[data-target=order-pay-2]
+        .popup-overflow
+            padding: 15px
+            padding-top: 30px
+    .quiz-form__wrap
+        flex-direction: column
+    .quiz-form__wrap .quiz-choice
+        width: 100%
+        margin-right: 0
+    .popup-form-promo__btn
+        position: static
+        border-radius: 4px
+        width: 100%
+        border-top-left-radius: 0
+        border-top-right-radius: 0
+        margin-top: -4px
+        padding: 14px
+    .quiz-form__wrap div
+        width: 100%
+        margin-bottom: 10px
+    .popup__subtitle br
+        display: none
+        font-size: 14px
+    .popup-form__privacy
+        line-height: 1.5
+        font-size: 10px
+    .popup-form-choice-card
+        margin: 5px
+        padding: 10px 5px
+    .popup-form-choice-card svg
+        height: 20px
+    .popup__subtitle br
+        display: none
+    .meth-popup__subtitle
+        padding-bottom: 0
+    .meth-popup::after
+        top: 110px
+    .meth-popup
+        overflow-y: hidden
+    .meth-popup__close
+        filter: brightness(100)
+    .meth-popup-form__desc
+        font-size: 10px
+    .meth-popup-card
+        padding: 0
+    .meth-popup-card .meth-popup-inner
+        padding: 25px
+    .meth-popup-wrap-info
+        align-items: flex-start
+    .meth-popup-wrap__img
+        width: 100px
+    .meth-popup-wrap
+        margin-bottom: 40px
+    .meth-popup-card::after
+        top: 170px
+    .meth-popup-card .meth-button
+        padding-left: 0
+        padding-right: 0
+    .meth-popup-form__desc
+        text-align: left
+    .meth-popup-thanks
+        padding: 0
+    .meth-popup-learn
+        padding: 0
+    .meth-popup-learn__title
+        margin-bottom: 35pxs
+        text-align: center
+    .meth-popup-learn-inner
+        padding: 25px
+    .meth-popup-learn-inner
+        padding: 20px
+
+@media (max-width: 768px)
+    .meth-button
+        padding-top: 20px
+        padding-left: 25px
+        padding-right: 25px
+        padding-bottom: 20px
+    .meth-first__button-img
+        display: none
+    .meth-header-wrap__intro
+        margin-left: 15px
+    .meth-header-wrap-contact-tel__span
+        font-size: 17px
+    .meth-first
+        padding-top: 130px
+        padding-bottom: 145px
+    .meth-invest__title--red
+        font-size: 30px
+    .meth-invest__title
+        font-size: 25px
+        margin-bottom: 15px
+    .meth-invest__subtitle
+        font-size: 17px
+        margin-bottom: 30px
+    .meth-invest-grid-card-wrap__title
+        margin-bottom: 10px
+        font-size: 20px
+    .meth-invest-grid-card-wrap__desc
+        font-size: 14px
+    .meth-invest-grid-card
+        padding-top: 20px
+        padding-bottom: 20px
+    .meth-invest-grid-card
+        padding-left: 150px
+    .meth-invest-grid-card:first-child img
+        width: 140px
+    .meth-invest-grid-card:nth-child(2) img
+        width: 180px
+        top: 30px
+    .meth-invest-grid-card:last-child img
+        width: 270px
+        top: 50%
+        left: 63px
+        margin-top: -200px
+    .meth-invest::after
+        width: 330px
+    .meth-invest::before
+        width: 340px
+    .meth-diff__title
+        font-size: 30px
+        margin-bottom: 25px
+    .meth-diff-grid-card
+        padding-top: 25px
+        padding-bottom: 25px
+        padding-left: 25px
+        padding-right: 25px
+    .meth-diff-grid-card-list__item
+        font-size: 14px
+    .meth-diff-grid-card--first .meth-diff-grid-card-list__item::before
+        top: 3px
+    .meth-ta-wrap__img
+        width: 600px
+        right: 0
+    .meth-ta-wrap::after
+        left: -116px
+        top: -184px
+        width: 639px
+        height: 443px
+    .meth-ta-list-item
+        margin-bottom: 25px
+    .meth-learn
+        padding-top: 0
+    .meth-learn-card-wrap__title
+        font-size: 30px
+    .meth-tired__img
+        right: 0
+    .meth__title
+        font-size: 30px
+    .meth-tired-list__item
+        font-size: 15px
+        margin-bottom: 15px
+    .meth-tired-list__item::before
+        top: 5px
+    .meth-blocks__title
+        font-size: 25px
+    .meth-blocks-desc-list__item
+        font-size: 15px
+    .meth-after-wrap-list-item__text
+        font-size: 14px
+    .meth-after-wrap
+        padding-top: 30px
+        padding-left: 30px
+        padding-bottom: 25px
+        padding-right: 40px
+    .meth-after-wrap__title
+        font-size: 25px
+        margin-bottom: 20px
+    .meth-who__img
+        width: 650px
+        top: -70px
+        position: absolute
+        right: 120px
+        &::after
+            width: 243px
+            height: 1025px
+    .meth-who__title
+        margin-bottom: 15px
+    .meth-who-list__item
+        font-size: 14px
+    .meth-edu
+        padding-top: 20px
+    .meth-edu-list__item
+        font-size: 14px
+    .meth-tool__img
+        width: 600px
+        top: -300px
+    .meth-tool .meth-relative
+        min-height: 420px
+    .meth-tool__title
+        margin-bottom: 15px
+    .meth-tool-list__item
+        font-size: 14px
+    .meth-tool-list__item--white
+        padding: 15px 25px
+        font-size: 15px
+    .meth-blocks-items-block
+        padding: 15px 40px
+    .meth-reviews
+        padding-top: 5 0px
+
+    .meth-pack
+        padding-bottom: 25px
+    .meth-faq__title
+        font-size: 25px
+    .meth-faq-list-card-top__title
+        font-size: 15px
+    .meth-faq-list-card-bottom__desc
+        font-size: 14px
+    .meth-faq-list-card-top
+        padding: 20px
+    .meth-form-container-offer__img
+        right: 340px
+    .meth-form-container-offer-form__input
+        width: 100%
+    .meth-reviews-slider
+        .slick-prev,
+        .slick-next
+            transform: scale(0.5)
+            top: 49%
+    .meth-reviews-slider-slide-profile-about__name
+        margin-bottom: 5px
+    .meth-form-container-offer__title
+        margin-bottom: 15px
+    .meth-form-container-offer__subtitle
+        font-size: 15px
+        margin-bottom: 20px
+    .meth-reviews-slider-slide__review
+        font-size: 15px
+    .meth-who .meth-relative
+        min-height: 600px
+    .meth-form-container-offer__img
+        width: 700px
+    .meth-reviews::after
+        width: 250px
+    .meth-reviews::before
+        width: 220px
+    .meth-reviews::before
+        height: 134%
+
+@media (max-width: 576px)
+    .meth-reviews-slider
+        .slick-prev,
+        .slick-next
+            transform: scale(0.5)
+            top: 140px
+    .meth-reviews-slider-slide__inner
+        padding: 30px 40px
+    .meth-faq-list-card-bottom
+        padding-left: 20px
+        padding-right: 20px
+        padding-top: 20px
+    .meth-reviews-slider-slide--next .market-reviews-slider-slide__inner,
+    .meth-reviews-slider-slide--prev .market-reviews-slider-slide__inner
+        opacity: 0
+    .meth-reviews-slider-slide__inner
+        padding: 30px 40px
+
+    .meth-reviews-slider-slide-profile-about__name
+        line-height: 1.1
+        margin-bottom: 5px
+
+    .meth-reviews-slider-slide__review
+        margin-bottom: 0
+
+    .meth-reviews-slider-slide-profile__img
+        margin-bottom: 10px
+
+    .meth-reviews-slider-slide-profile__occupie
+        display: none
+    .meth-header-wrap__intro
+        display: none
+    .meth-first__subtitle::before
+        display: none
+    .meth-first__title
+        font-size: 30px
+        text-align: center
+    .meth-first__subtitle
+        text-align: center
+    .meth-first__button
+        margin: 0 auto
+    .meth__title
+        font-size: 20px
+    .meth-invest-grid-card
+        padding-left: 25px
+    .meth-invest__subtitle
+        font-size: 15px
+    .meth-invest-grid-card img
+        display: none
+    .meth-invest::after
+        opacity: 0.2
+    .meth-invest::before
+        opacity 0.2
+    .meth-diff-grid-card__title
+        font-size: 20px
+    .meth-diff-grid-card
+        padding-top: 20px
+        padding-bottom: 20px
+        padding-left: 20px
+        padding-right: 20px
+    .meth-ta-wrap__img
+        width: 500px
+    .meth-ta-wrap::after
+        left: -116px
+        top: -131px
+        width: 562px
+        height: 355px
+    .meth-ta-list
+        margin-left: 20px
+    .meth-learn-card-wrap__title
+        margin-bottom: 20px
+    .meth-tired__img
+        width: 550px
+    .meth-tired .meth-relative
+        min-height: 450px
+    .meth-blocks__title
+        margin-bottom: 25px
+        text-align: center
+    .meth-blocks-items
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-template-rows: auto
+        overflow-x: scroll
+        &::-webkit-scrollbar
+            display: none
+    .meth-blocks-items-block
+        text-align: center
+    .meth-blocks-desc__title
+        font-size: 20px
+        margin-bottom: 15px
+    .meth-after-wrap-list-item__img
+        width: 70px
+    .meth-who::after
+        width: 220px
+    .meth-who__img
+        width: 550px
+    .meth-who .meth-relative
+        min-height: 500px
+    .meth-edu__title
+        margin-bottom: 20px
+    .meth-deu
+        position: relative
+        z-index: 5
+    .meth-tool::after
+        width: 290px
+        height: 954px
+        top: 161px
+    .meth-tired__img
+        left: -30px
+    .meth-who__img
+        left: -102px
+    .meth-tool__img
+        left: -70px
+    .meth-pack-slider-card-credit
+        padding: 20px 25px
+        padding-left: 40px
+    .meth-form-container-offer__img
+        right: 230px
+        width: 700px
+    .meth-form-container-offer__title
+        text-align: center
+    .meth-form-container-offer__subtitle
+        text-align: center
+    .meth-form-container
+        padding-left: 35px
+        padding-right: 35px
+    .meth-first
+        padding-top: 60px
+        padding-bottom: 530px
+    .meth-faq-list
+        position: relative
+        z-index: 10
+    .meth-faq-list-card-top__title
+        font-size: 14px
+    .meth-blocks-items-block
+        border-radius: 15px
+    .meth-form-container-offer__img
+        max-height: 240px
+        object-fit: contain
+    .meth-form-container
+        padding-left: 20px
+        padding-right: 20px
+        padding-bottom: 20px
+    .meth-form-container-offer-form__input
+        padding: 20px
+        left: -150px
+@media (min-width: 456px) and (max-width: 577px)
+    .market-reviews-slider
+        .slick-prev,
+        .slick-next
+            top: 120px
+
+        .slick-prev
+            left: -10px
+
+        .slick-next
+            right: -10px
+
+@media (max-width: 460px)
+    .lfp-partnership-bullets-bar
+        height: calc(100% + 46vh)
+    .meth-after-wrap-list-item
+        flex-direction: column
+    .meth-after-wrap
+        padding-left: 20px
+        padding-right: 20px
+    .meth-after-wrap-list-item__text
+        margin-left: 0
+        text-align: center
+@media (max-width: 428px)
+    .meth-form-container-offer__img
+        left: -200px
+@media (max-width: 410px)
+    .lfp-partnership-bullets-bar
+        height: calc(98% + 55vh)
+    .lfp-partnership-bullets-bar:after
+        bottom: -10px
+    .meth-ta-wrap__img
+        right: 76px
+    .meth-tired__img
+        left: -95px
+    .meth-who__img
+        left: -170px
+    .meth-tool__img
+        left: -60px
+        width: 500px
+    .meth-ta-wrap::after
+        left: -195px
+    .meth-tool .meth-relative
+        min-height: 335px
+@media (max-width: 380px)
+    .lfp-partnership-bullets-bar:after
+        height: 114vw
+    .lfp-partnership-bullets-cards__button
+        margin-left: -45px
+    .meth-pack-slider-card-header__img
+        display: none
+    .meth-pack-slider-card-header__title
+        font-size: 20px
+        text-align: center
+        br
+            display: none
+    .meth-pack-slider-card-header__count
+        text-align: center
+    .meth-pack-slider-card-header
+        margin-bottom: 0
+    .meth-pack-slider-card__desc
+        font-size: 14px
+@media (max-width: 340px)
+    .meth-learn-card-wrap
+        padding-left: 15px
+        padding-right: 15px
+        padding-top: 20px
+        padding-bottom: 20px
+    .meth-learn-card-wrap__button
+        font-size: 10px
